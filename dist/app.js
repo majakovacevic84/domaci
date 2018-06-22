@@ -31,16 +31,7 @@ var App = /** @class */ (function () {
             res.render('movie');
         });
         router.get('/carusel', function (req, res) {
-            res.render('carusel', {
-                imageCarusel: [
-                    { name: 'slika1.jpg' },
-                    { name: 'slika2.jpg' },
-                    { name: 'slika3.jpg' },
-                    { name: 'slika4.jpg' },
-                    { name: 'slika6.jpg' },
-                    { name: 'slika7.jpg' }
-                ]
-            });
+            res.render('carusel');
         });
         this.app.use('/', router);
     };
